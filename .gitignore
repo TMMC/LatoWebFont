@@ -1,9 +1,72 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# Compiled docs
+_gh_pages
+_gh-pages
+_site
 
-# Folder config file
+# Always-ignore extensions
+*~
+*.7z
+*.csv
+*.dat
+*.diff
+*.err
+*.gz
+*.iso
+*.jar
+*.log
+*.orig
+*.out
+*.pid
+*.pid.lock
+*.rar
+*.rej
+*.ruby-version
+*.seed
+*.swo
+*.swp
+*.tgz
+*.tar
+*.vi
+*.zip
+
+# OS or editor files to ignore
+._*
+.AppleDouble
+.cache
 Desktop.ini
+.DS_Store
+ehthumbs.db
+*.esproj
+.LSOverride
+nbproject
+.project
+.settings
+*.sublime-*
+Thumbs.db
+.tmproj
+
+# OS or editor folders to ignore
+.CVS
+components
+.externalToolBuilders
+.grunt
+.hg
+.idea
+jspm_packages
+lib-cov
+logs
+.npm
+pids
+results
+.svn
+vendor
+
+# Directories potentially created on remote AFP share
+.apdisk
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
@@ -14,34 +77,20 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
+# Files that might appear on external disk
 .Spotlight-V100
-.TemporaryItems
 .Trashes
-.VolumeIcon.icns
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Project specific folders to ignore
+bower_components
+node_modules
+.sass-cache
+build
+temp
+tmp
+
+# Project specific files to ignore
+npm-debug.log
+
+# Icon must end with two \r
+Icon
