@@ -26,7 +26,7 @@ var gulp               = require('gulp'),
 // == compile-sass task: compiling sass to css
 gulp.task('compile-sass', function() {
   // Outputs non-minified and minified stylesheets
-  return gulp.src('src/fonts.scss')
+  return gulp.src('src/*.scss')
     .pipe(plugins.plumber())
     .pipe(plugins.sass(sassOptionsDev))
     .on('error', function (err) { plugins.util.log(err); this.emit('end'); })
@@ -41,7 +41,7 @@ gulp.task('compile-sass', function() {
 
 // == compile-less task: compiling less to css
 gulp.task('compile-less', function () {
-  return gulp.src('src/fonts.less')
+  return gulp.src('src/*.less')
     .pipe(plugins.plumber())
     .pipe(plugins.less(lessOptionsDev))
     .on('error', function (err) { plugins.util.log(err); this.emit('end'); })
@@ -63,9 +63,9 @@ if (cssCompiler === 'sass') {
 // == watch task
 gulp.task('watch', function() {
   if (cssCompiler === 'sass') {
-    gulp.watch('src/fonts.scss', ['compile-sass']);
+    gulp.watch('src/*.scss', ['compile-sass']);
   } else {
-    gulp.watch('src/fonts.less', ['compile-less']);
+    gulp.watch('src/*.less', ['compile-less']);
   }
 });
 
