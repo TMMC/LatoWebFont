@@ -16,8 +16,7 @@ var gulp               = require('gulp'),
   sassOptionsProd      = { errLogToConsole: false, outputStyle: 'compressed' },
   lessOptionsDev       = { plugins: [lessAutoprefixer], ieCompat: true, compress: false, sourceMap: false },
   lessOptionsProd      = { plugins: [lessAutoprefixer, lessCleanCss], ieCompat: true, compress: true, sourceMap: false },
-  cssCompiler          = 'sass',
-  dateYear             = new Date().getFullYear();
+  cssCompiler          = 'sass';
 
 // ==============================================
 // === Tasks
